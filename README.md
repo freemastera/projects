@@ -426,7 +426,7 @@ CREATE TABLE pentaho_dw.sales (
   
 <img src="/img/31.jpg">   
   
-<img src="/img/32.png">   
+<img src="/img/32.jpg">   
 
 
 #### 3. check_corrections
