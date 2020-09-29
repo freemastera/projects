@@ -37,12 +37,12 @@ Pentaho DI имеет:
 ### Данные о покупателях
 Компания представлена по всей стране. На данный момент открыто 4 региональных представительства, каждое со своим отделом продаж и региональным менеджером: CENTRAL, WEST, EAST, SOUTH. 
 В компании нет единого формата отчетности и каждый отдел отдает данные клиентов по своему:
-* Отдел CENTRAL: Одним файлом в формате Excel - CustomerData_East.xlsx
-* Отдел WEST: В формате csv, причем не одним, а несколькими файлами, в разбивке по основным городам
+* Отдел CENTRAL: [Одним файлом в формате Excel - CustomerData_East.xlsx](https://github.com/freemastera/pentaho/blob/master/customers/central/Customers_Central.xlsx)
+* Отдел WEST: [В формате csv](https://github.com/freemastera/pentaho/tree/master/customers/west), причем не одним, а несколькими файлами, в разбивке по основным городам
  <img src="/img/2.png"> 
 
-* Отдел EAST: Таблица в Google Sheets
-* Отдел SOUTH: CSV файл в сжатом виде - zip формат.
+* Отдел EAST: [Таблица в Google Sheets](https://docs.google.com/spreadsheets/d/1L94twRun-QpgjgrnpDhYr-BVacnjHJ-EI5IGjV4fy60/edit?usp=sharing)
+* Отдел SOUTH: [CSV файл в сжатом виде - zip формат](https://github.com/freemastera/pentaho/tree/master/customers/east)
 
 
 Общее у них то, что поля передаются одинаковые, но их порядок, формат, а иногда и название может отличаться
