@@ -1,0 +1,93 @@
+--creating schema
+create schema pentaho_dw;
+
+
+--creating table customers
+--DROP table pentaho_dw.customers;
+CREATE TABLE pentaho_dw.customers (
+	cust_id serial primary key NOT NULL,
+	customer_id varchar(20),
+	customer_name varchar(30),
+	segment varchar(20),
+	city varchar(20),
+	state varchar(20),
+	country varchar(20),
+	postal_code varchar(10),
+	region varchar(50)
+);
+
+--creating table calendar
+--DROP table pentaho_dw.calendar;
+CREATE TABLE pentaho_dw.calendar
+(
+date_id serial  NOT NULL,
+year        int NOT NULL,
+quarter     int NOT NULL,
+month       int NOT NULL,
+week        int NOT NULL,
+date        date NOT NULL,
+week_day    varchar(20) NOT NULL,
+leap  varchar(20) NOT NULL,
+CONSTRAINT PK_calendar PRIMARY KEY ( date_id )
+CONSTRAINT date_unique UNIQUE (date)
+);
+
+--inserting into table calendar
+--TRUNCATE table pentaho_dw.calendar;
+insert into pentaho_dw.calendar 
+select 
+to_char(date,'yyyymmdd')::int as date_id,  
+       extract('year' from date)::int as year,
+       extract('quarter' from date)::int as quarter,
+       extract('month' from date)::int as month,
+       extract('week' from date)::int as week,
+       date::date,
+       to_char(date, 'dy') as week_day,
+       extract('day' from
+               (date + interval '2 month - 1 day')
+              ) = 29
+       as leap
+  from generate_series(date '2000-01-01',
+                       date '2030-01-01',
+                       interval '1 day')
+       as t(date);
+	   
+--creating table products
+--DROP table pentaho_dw.products;	   
+CREATE TABLE pentaho_dw.products (
+	prod_id serial primary key NOT NULL,
+	product_id varchar (20) NOT NULL DEFAULT 'N/A',
+	category varchar(15) NOT NULL DEFAULT 'N/A',
+	sub_category varchar(20) NOT NULL DEFAULT 'N/A',
+	product_name varchar(255) NOT NULL DEFAULT 'N/A',
+	start_date date,
+	end_date date,
+	"version" smallint NOT NULL DEFAULT 1,
+	"current" varchar(3) NOT NULL DEFAULT 'Y',
+	lastupdate date
+);
+
+--creating table shipping
+--DROP table pentaho_dw.shipping;	   
+CREATE TABLE pentaho_dw.shipping (
+	order_id varchar (25) primary key NOT NULL,
+	ship_mode varchar (25) NOT NULL DEFAULT 'N/A',
+	returned varchar (1)
+);
+--creating fact table sales
+--DROP TABLE pentaho_dw.sales;
+CREATE TABLE pentaho_dw.sales (
+	row_id serial PRIMARY KEY NOT NULL,
+	order_id varchar (25) NOT NULL REFERENCES pentaho_dw.shipping (order_id),
+	order_date date NOT NULL REFERENCES pentaho_dw.calendar (date),
+	ship_date date REFERENCES pentaho_dw.calendar (date),
+	cust_id serial NOT NULL REFERENCES pentaho_dw.customers (cust_id),
+	prod_id serial NOT NULL REFERENCES pentaho_dw.products (prod_id),
+	sales numeric NOT NULL DEFAULT '0',
+	quantity int NOT NULL DEFAULT '0',
+	discount numeric NOT NULL DEFAULT '0',
+	profit numeric NOT NULL DEFAULT '0'
+);
+
+
+

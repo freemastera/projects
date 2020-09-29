@@ -1,0 +1,251 @@
+Customer ID;Customer Name;Segment;Country;City;State;Postal Code;Region
+AS-10630;Ann Steele;Home Office;US;Seattle;Washington;98103;West
+JD-16015;Joy Daniels;Consumer;US;Seattle;Washington;98115;West
+MW-18220;Mitch Webber;Consumer;US;Seattle;Uashington;98103;West
+BN-11515;Bradley Nguyen;Consumer;US;Seattle;Washington;98103;West
+DB-13060;Dave Brooks;Consumer;US;Seattle;Washington;98115;West
+CM-12715;Craig Molinari;Corporate;US;Seattle;Washington;98103;West
+MC-17275;Marc Crier;Consumer;US;Pasco;Washington;99301;West
+MM-17260;Magdelene Morse;Consumer;US;Seattle;Washington;98105;West
+TB-21400;Tom Boeckenhauer;Consumer;US;Seattle;Washington;98105;West
+TS-21430;Tom Stivers;Corporate;US;Seattle;Washington;98103;West
+EB-14170;Evan Bailliet;Consumer;US;Seattle;Washington;98115;West
+Dp-13240;Dean percer;Home Office;US;Seattle;Washington;98115;West
+ML-17395;Marina Lichtenstein;Corporate;US;Seattle;Washington;98103;West
+MH-17785;Maya Herman;Corporate;US;Seattle;Washington;98105;West
+PP-18955;Paul Prost;Home Office;US;Seattle;Washington;98115;West
+GM-14680;Greg Matthias;Consumer;US;Seattle;Washington;98105;West
+HR-14830;Harold Ryan;Corporate;US;Seattle;Washington;98103;West
+CS-12400;Christopher Schild;Home Office;US;Seattle;Washington;98115;West
+MZ-17515;Mary Zewe;Corporate;US;Seattle;Washington;98115;West
+CL-12565;Clay Ludtke;Consumer;US;Seattle;Washington;98115;West
+MC-18130;Mike Caudle;Corporate;US;Seattle;Washington;98115;West
+Dl-13600;Dorris liebe;Corporate;US;Seattle;Washington;98105;West
+SW-20755;Steven Ward;Corporate;US;Seattle;Washington;98115;West
+JK-15625;Jim Karlsson;Consumer;US;Olympia;Washington;98502;West
+SC-20725;Steven Cartwright;Consumer;US;Seattle;Washington;98115;West
+PJ-18835;Patrick Jones;Corporate;US;Seattle;Washington;98115;West
+DB-13615;Doug Bickford;Consumer;US;Seattle;Washington;98105;West
+EH-13990;Erica Hackney;Consumer;US;Bellevue;Washington;98006;West
+RP-19390;Resi Pölking;Consumer;US;Seattle;Washington;98103;West
+IG-15085;Ivan Gibson;Consumer;US;Seattle;Washington;98103;West
+GH-14425;Gary Hwang;Consumer;US;Seattle;Washington;98105;West
+ZC-21910;Zuschuss Carroll;Consumer;US;Edmonds;Washington;98026;West
+AB-10015;Aaron Bergman;Consumer;US;Seattle;Washington;98103;West
+AI-10855;Arianne Irving;Consumer;US;Kent;Washington;98031;West
+AH-10585;Angele Hood;Consumer;US;Seattle;Washington;98105;West
+BF-11020;Barry Französisch;Corporate;US;Seattle;Washington;98105;West
+MG-17650;Matthew Grinstein;Home Office;US;Seattle;Washington;98103;West
+JH-15985;Joseph Holt;Consumer;US;Seattle;Washington;98103;West
+SC-20260;Scott Cohen;Corporate;US;Seattle;Washington;98115;West
+CS-12130;Chad Sievert;Consumer;US;Seattle;Washington;98105;West
+JF-15415;Jennifer Ferguson;Consumer;US;Spokane;Washington;99207;West
+BT-11305;Beth Thompson;Home Office;US;Seattle;Washington;98105;West
+JH-15985;Joseph Holt;Consumer;US;Seattle;Washington;98115;West
+DK-13090;Dave Kipp;Consumer;US;Seattle;Washington;98103;West
+VW-21775;Victoria Wilson;Corporate;US;Bellevue;Washington;98006;West
+FH-14365;Fred Hopkins;Corporate;US;Seattle;Washington;98115;West
+JE-15475;Jeremy Ellison;Consumer;US;Seattle;Washington;98103;West
+KB-16405;Katrina Bavinger;Home Office;US;Seattle;Washington;98105;West
+MC-17275;Marc Crier;Consumer;US;Seattle;Washington;98103;West
+MC-17575;Matt Collins;Consumer;US;Seattle;Washington;98103;West
+NK-18490;Neil Knudson;Home Office;US;Seattle;Washington;98105;West
+LC-17140;Logan Currie;Consumer;US;Seattle;Washington;98103;West
+JL-15850;John Lucas;Consumer;US;Seattle;Washington;98105;West
+DO-13435;Denny Ordway;Consumer;US;Seattle;Washington;98103;West
+RD-19480;Rick Duston;Consumer;US;Olympia;Washington;98502;West
+KC-16540;Kelly Collister;Consumer;US;Seattle;Washington;98115;West
+JC-15775;John Castell;Consumer;US;Seattle;Washington;98115;West
+CC-12670;Craig Carreira;Consumer;US;Seattle;Washington;98103;West
+JF-15490;Jeremy Farry;Consumer;US;Seattle;Washington;98105;West
+KL-16645;Ken Lonsdale;Consumer;US;Seattle;Washington;98105;West
+JO-15550;Jesus Ocampo;Home Office;US;Seattle;Washington;98105;West
+MV-17485;Mark Van Huff;Consumer;US;Seattle;Washington;98115;West
+TW-21025;Tamara Willingham;Home Office;US;Seattle;Washington;98105;West
+BT-11305;Beth Thompson;Home Office;US;Seattle;Washington;98103;West
+NP-18670;Nora Paige;Consumer;US;Seattle;Washington;98105;West
+SC-20380;Shahid Collister;Consumer;US;Seattle;Washington;98115;West
+AG-10495;Andrew Gjertsen;Corporate;US;Seattle;Washington;98105;West
+KA-16525;Kelly Andreada;Consumer;US;Seattle;Washington;98103;West
+SS-20140;Saphhira Shifley;Corporate;US;Seattle;Washington;98103;West
+RD-19660;Robert Dilbeck;Home Office;US;Seattle;Washington;98103;West
+CP-12085;Cathy Prescott;Corporate;US;Covington;Washington;98042;West
+Co-12640;Corey-Lock;Consumer;US;Seattle;Washington;98105;West
+MH-18025;Michelle Huthwaite;Consumer;US;Seattle;Washington;98115;West
+RD-19900;Ruben Dartt;Consumer;US;Bellevue;Washington;98006;West
+SH-19975;Sally Hughsby;Corporate;US;Seattle;Washington;98103;West
+AB-10060;Adam Bellavance;Home Office;US;Des Moines;Washington;98198;West
+TC-21475;Tony Chapman;Home Office;US;Seattle;Washington;98115;West
+SR-20740;Steven Roelle;Home Office;US;Seattle;Washington;98103;West
+ME-17725;Max Engle;Consumer;US;Seattle;Washington;98105;West
+SG-20080;Sandra Glassco;Consumer;US;Seattle;Washington;98105;West
+RO-19780;Rose O'Brian;Consumer;US;Seattle;Washington;98115;West
+EB-13840;Ellis Ballard;Corporate;US;Seattle;Washington;98103;West
+LL-16840;Lauren Leatherbury;Consumer;US;Seattle;Washington;98105;West
+ME-18010;Michelle Ellison;Corporate;US;Seattle;Washington;98105;West
+RB-19465;Rick Bensley;Home Office;US;Seattle;Washington;98103;West
+JE-15715;Joe Elijah;Consumer;US;Seattle;Washington;98115;West
+BM-11785;Bryan Mills;Consumer;US;Seattle;Washington;98115;West
+BM-11140;Becky Martin;Consumer;US;Des Moines;Washington;98198;West
+TR-21325;Toby Ritter;Consumer;US;Seattle;Washington;98103;West
+CM-11815;Candace McMahon;Corporate;US;Seattle;Washington;98115;West
+SC-20680;Steve Carroll;Home Office;US;Seattle;Washington;98105;West
+MJ-17740;Max Jones;Consumer;US;Seattle;Washington;98115;West
+KB-16585;Ken Black;Corporate;US;Seattle;Washington;98115;West
+BV-11245;Benjamin Venier;Corporate;US;Seattle;Washington;98103;West
+MM-18280;Muhammed MacIntyre;Corporate;US;Seattle;Washington;98103;West
+NP-18700;Nora Preis;Consumer;US;Seattle;Washington;98105;West
+EB-13750;Edward Becker;Corporate;US;Seattle;Washington;98103;West
+JM-15265;Janet Molinari;Corporate;US;Seattle;Washington;98115;West
+SF-20200;Sarah Foster;Consumer;US;Marysville;Washington;98270;West
+DL-13495;Dionis Lloyd;Corporate;US;Spokane;Washington;99207;West
+AP-10915;Arthur Prichep;Consumer;US;Seattle;Washington;98105;West
+SF-20200;Sarah Foster;Consumer;US;Seattle;Washington;98103;West
+TC-20980;Tamara Chand;Corporate;US;Seattle;Washington;98105;West
+AR-10825;Anthony Rawles;Corporate;US;Seattle;Washington;98103;West
+EH-13765;Edward Hooks;Corporate;US;Seattle;Washington;98103;West
+AJ-10795;Anthony Johnson;Corporate;US;Seattle;Washington;98115;West
+MC-18100;Mick Crebagga;Consumer;US;Marysville;Washington;98270;West
+SW-20455;Shaun Weien;Consumer;US;Seattle;Washington;98103;West
+SE-20110;Sanjit Engle;Consumer;US;Seattle;Washington;98103;West
+MC-17275;Marc Crier;Consumer;US;Seattle;Washington;98105;West
+PO-19180;Philisse Overcash;Home Office;US;Seattle;Washington;98103;West
+CC-12145;Charles Crestani;Consumer;US;Seattle;Washington;98103;West
+DW-13585;Dorothy Wardle;Corporate;US;Edmonds;Washington;98026;West
+AS-10135;Adrian Shami;Home Office;US;Auburn;Washington;98002;West
+KB-16600;Ken Brennan;Corporate;US;Seattle;Washington;98105;West
+ED-13885;Emily Ducich;Home Office;US;Seattle;Washington;98115;West
+MS-17770;Maxwell Schwartz;Consumer;US;Seattle;Washington;98105;West
+AB-10255;Alejandro Ballentine;Home Office;US;Seattle;Washington;98103;West
+DN-13690;Duane Noonan;Consumer;US;Seattle;Washington;98115;West
+SC-20680;Steve Carroll;Home Office;US;Seattle;Washington;98115;West
+CC-12220;Chris Cortes;Consumer;US;Seattle;Washington;98105;West
+FM-14290;Frank Merwin;Home Office;US;Vancouver;Washington;98661;West
+DP-13105;Dave Poirier;Corporate;US;Seattle;Washington;98115;West
+SJ-20125;Sanjit Jacobs;Home Office;US;Seattle;Washington;98103;West
+AR-10825;Anthony Rawles;Corporate;US;Vancouver;Washington;98661;West
+IM-15070;Irene Maddox;Consumer;US;Seattle;Washington;98103;West
+RD-19720;Roger Demir;Consumer;US;Seattle;Washington;98105;West
+AC-10450;Amy Cox;Consumer;US;Seattle;Washington;98105;West
+AS-10285;Alejandro Savely;Corporate;US;Seattle;Washington;98103;West
+JB-16000;Joy Bell-;Consumer;US;Longview;Washington;98632;West
+CR-12580;Clay Rozendal;Home Office;US;Bellevue;Washington;98006;West
+BD-11770;Bryan Davis;Consumer;US;Edmonds;Washington;98026;West
+TG-21310;Toby Gnade;Consumer;US;Des Moines;Washington;98198;West
+HJ-14875;Heather Jas;Home Office;US;Seattle;Washington;98105;West
+JM-15580;Jill Matthias;Consumer;US;Seattle;Washington;98105;West
+RP-19270;Rachel Payne;Corporate;US;Seattle;Washington;98115;West
+SS-20590;Sonia Sunley;Consumer;US;Seattle;Washington;98115;West
+MS-17530;MaryBeth Skach;Consumer;US;Seattle;Washington;98105;West
+SN-20710;Steve Nguyen;Home Office;US;Covington;Washington;98042;West
+FG-14260;Frank Gastineau;Home Office;US;Seattle;Washington;98105;West
+SH-19975;Sally Hughsby;Corporate;US;Seattle;Washington;98105;West
+FH-14350;Fred Harton;Consumer;US;Seattle;Washington;98105;West
+TW-21025;Tamara Willingham;Home Office;US;Seattle;Washington;98103;West
+AB-10060;Adam Bellavance;Home Office;US;Seattle;Washington;98105;West
+SS-20875;Sung Shariari;Consumer;US;Redmond;Washington;98052;West
+MW-18220;Mitch Webber;Consumer;US;Seattle;Washington;98103;West
+JC-15385;Jenna Caffey;Consumer;US;Kent;Washington;98031;West
+CK-12205;Chloris Kastensmidt;Consumer;US;Renton;Washington;98059;West
+SU-20665;Stephanie Ulpright;Home Office;US;Seattle;Washington;98103;West
+PS-18970;Paul Stevenson;Home Office;US;Seattle;Washington;98105;West
+MR-17545;Mathew Reese;Home Office;US;Seattle;Washington;98103;West
+RS-19420;Ricardo Sperren;Corporate;US;Seattle;Washington;98115;West
+PW-19030;Pauline Webber;Corporate;US;Seattle;Washington;98105;West
+GG-14650;Greg Guthrie;Corporate;US;Seattle;Washington;98103;West
+LB-16795;Laurel Beltran;Home Office;US;Seattle;Washington;98105;West
+PF-19165;Philip Fox;Consumer;US;Olympia;Washington;98502;West
+SB-20185;Sarah Brown;Consumer;US;Kent;Washington;98031;West
+PL-18925;Paul Lucas;Home Office;US;Seattle;Washington;98115;West
+YS-21880;Yana Sorensen;Corporate;US;Seattle;Washington;98103;West
+SJ-20125;Sanjit Jacobs;Home Office;US;Seattle;Washington;98105;West
+HW-14935;Helen Wasserman;Corporate;US;Seattle;Washington;98105;West
+TT-21070;Ted Trevino;Consumer;US;Seattle;Washington;98103;West
+SF-20200;Sarah Foster;Consumer;US;Bellingham;Washington;98226;West
+KN-16705;Kristina Nunn;Home Office;US;Seattle;Washington;98105;West
+MM-18055;Michelle Moray;Consumer;US;Seattle;Washington;98115;West
+RW-19540;Rick Wilson;Corporate;US;Seattle;Washington;98103;West
+KB-16585;Ken Black;Corporate;US;Seattle;Washington;98103;West
+HM-14860;Harry Marie;Corporate;US;Seattle;Washington;98103;West
+BS-11755;Bruce Stewart;Consumer;US;Edmonds;Washington;98026;West
+AB-10165;Alan Barnes;Consumer;US;Bellevue;Washington;98006;West
+CS-11845;Cari Sayre;Corporate;US;Seattle;Washington;98105;West
+DS-13030;Darrin Sayre;Home Office;US;Seattle;Washington;98115;West
+ML-18265;Muhammed Lee;Consumer;US;Seattle;Washington;98103;West
+DW-13540;Don Weiss;Consumer;US;Seattle;Washington;98105;West
+DK-13375;Dennis Kane;Consumer;US;Seattle;Washington;98115;West
+LP-17080;Liz Pelletier;Consumer;US;Seattle;Washington;98103;West
+RP-19855;Roy Phan;Corporate;US;Seattle;Washington;98103;West
+GM-14500;Gene McClure;Consumer;US;Seattle;Washington;98103;West
+TB-21400;Tom Boeckenhauer;Consumer;US;Seattle;Washington;98103;West
+AC-10615;Ann Chong;Corporate;US;Seattle;Washington;98115;West
+TP-21415;Tom Prescott;Consumer;US;Seattle;Washington;98115;West
+VF-21715;Vicky Freymann;Home Office;US;Seattle;Washington;98115;West
+CS-12250;Chris Selesnick;Corporate;US;Seattle;Washington;98103;West
+JW-15220;Jane Waco;Corporate;US;Vancouver;Washington;98661;West
+RB-19360;Raymond Buch;Consumer;US;Seattle;Washington;98115;West
+SC-20230;Scot Coram;Corporate;US;Seattle;Washington;98105;West
+PB-19150;Philip Brown;Consumer;US;Seattle;Washington;98115;West
+JK-15625;Jim Karlsson;Consumer;US;Seattle;Washington;98115;West
+KC-16675;Kimberly Carter;Corporate;US;Seattle;Washington;98105;West
+BP-11230;Benjamin Patterson;Consumer;US;Spokane;Washington;99207;West
+CM-12655;Corinna Mitchell;Home Office;US;Seattle;Washington;98115;West
+FM-14215;Filia McAdams;Corporate;US;Seattle;Washington;98103;West
+PO-19180;Philisse Overcash;Home Office;US;Seattle;Washington;98115;West
+MO-17800;Meg O'Connel;Home Office;US;Spokane;Washington;99207;West
+MZ-17335;Maria Zettner;Home Office;US;Seattle;Washington;98105;West
+CS-11845;Cari Sayre;Corporate;US;Seattle;Washington;98103;West
+AH-10210;Alan Hwang;Consumer;US;Seattle;Washington;98105;West
+SW-20275;Scott Williamson;Consumer;US;Seattle;Washington;98115;West
+MB-17305;Maria Bertelson;Consumer;US;Longview;Washington;98632;West
+GD-14590;Giulietta Dortch;Corporate;US;Bellingham;Washington;98226;West
+HM-14980;Henry MacAllister;Consumer;US;Seattle;Washington;98105;West
+NF-18595;Nicole Fjeld;Home Office;US;Seattle;Washington;98105;West
+DK-12895;Dana Kaydos;Consumer;US;Seattle;Washington;98103;West
+AT-10735;Annie Thurman;Consumer;US;Seattle;Washington;98115;West
+BW-11110;Bart Watters;Corporate;US;Spokane;Washington;99207;West
+RW-19630;Rob Williams;Corporate;US;Seattle;Washington;98105;West
+EB-13840;Ellis Ballard;Corporate;US;Seattle;Washington;98105;West
+PB-18805;Patrick Bzostek;Home Office;US;Seattle;Washington;98115;West
+SZ-20035;Sam Zeldin;Home Office;US;Seattle;Washington;98105;West
+BD-11320;Bill Donatelli;Consumer;US;Seattle;Washington;98103;West
+GD-14590;Giulietta Dortch;Corporate;US;Everett;Washington;98208;West
+NC-18535;Nick Crebassa;Corporate;US;Seattle;Washington;98105;West
+KH-16630;Ken Heidel;Corporate;US;Seattle;Washington;98105;West
+CS-12355;Christine Sundaresam;Consumer;US;Seattle;Washington;98115;West
+HW-14935;Helen Wasserman;Corporate;US;Seattle;Washington;98115;West
+JW-15955;Joni Wasserman;Consumer;US;Seattle;Washington;98103;West
+ME-17725;Max Engle;Consumer;US;Seattle;Washington;98103;West
+SO-20335;Sean O'Donnell;Consumer;US;Seattle;Washington;98105;West
+JK-15640;Jim Kriz;Home Office;US;Seattle;Washington;98105;West
+KH-16510;Keith Herrera;Consumer;US;Seattle;Washington;98103;West
+NP-18685;Nora Pelletier;Home Office;US;Des Moines;Washington;98198;West
+JG-15115;Jack Garza;Consumer;US;Des Moines;Washington;98198;West
+CS-11950;Carlos Soltero;Consumer;US;Seattle;Washington;98115;West
+BS-11365;Bill Shonely;Corporate;US;Seattle;Washington;98105;West
+JS-15880;John Stevenson;Consumer;US;Seattle;Washington;98103;West
+DG-13300;Deirdre Greer;Corporate;US;Seattle;Washington;98105;West
+CP-12340;Christine Phan;Corporate;US;Seattle;Washington;98115;West
+EH-13765;Edward Hooks;Corporate;US;Seattle;Washington;98115;West
+RB-19570;Rob Beeghly;Consumer;US;Seattle;Washington;98105;West
+DK-13375;Dennis Kane;Consumer;US;Seattle;Washington;98105;West
+CC-12430;Chuck Clark;Home Office;US;Redmond;Washington;98052;West
+FP-14320;Frank Preis;Consumer;US;Seattle;Washington;98105;West
+NM-18520;Neoma Murray;Consumer;US;Seattle;Washington;98105;West
+NZ-18565;Nick Zandusky;Home Office;US;Seattle;Washington;98115;West
+TB-21250;Tim Brockman;Consumer;US;Seattle;Washington;98103;West
+GT-14710;Greg Tran;Consumer;US;Seattle;Washington;98105;West
+VM-21685;Valerie Mitchum;Home Office;US;Seattle;Washington;98105;West
+CC-12220;Chris Cortes;Consumer;US;Seattle;Washington;98103;West
+JF-15295;Jason Fortune-;Consumer;US;Seattle;Washington;98103;West
+EJ-14155;Eva Jacobs;Consumer;US;Seattle;Washington;98105;West
+GW-14605;Giulietta Weimer;Consumer;US;Seattle;Washington;98115;West
+VG-21790;Vivek Gonzalez;Consumer;US;Seattle;Washington;98103;West
+AM-10705;Anne McFarland;Consumer;US;Seattle;Washington;98115;West
+MC-17845;Michael Chen;Consumer;US;Pasco;Washington;99301;West
+PF-19225;Phillip Flathmann;Consumer;US;Edmonds;Washington;98026;West
+CD-12280;Christina DeMoss;Consumer;US;Seattle;Washington;98105;West
+CK-12325;Christine Kargatis;Home Office;US;Seattle;Washington;98103;West
+BP-11185;Ben Peterman;Corporate;US;Seattle;Washington;98103;West
+JF-15415;Jennifer Ferguson;Consumer;US;Seattle;Washington;98105;West
+JO-15145;Jack O'Briant;Corporate;US;Seattle;Washington;98103;West

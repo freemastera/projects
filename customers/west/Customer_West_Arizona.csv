@@ -1,0 +1,108 @@
+Customer ID;Customer Name;Segment;Country;City;State;Postal Code;Region
+JM-15655;Jim Mitchum;Corporate;US;Glendale;Arizon;85301;West
+JM-15655;Jim Mitchum;Corporate;US;Glendale;Arisona;85301;West
+DM-12955;Dario Medina;Corporate;US;Mesa;Arizona;85204;West
+BS-11590;Brendan Sweed;Corporate;US;Gilbert;Arizona;85234;West
+ES-14080;Erin Smith;Corporate;US;Tempe;Arizona;85281;West
+AH-10120;Adrian Hane;Home Office;US;Tucson;Arizona;85705;West
+RF-19345;Randy Ferguson;Corporate;US;Phoenix;Arizona;85023;West
+GH-14410;Gary Hansen;Home Office;US;Glendale;Arizona;85301;West
+TB-21280;Toby Braunhardt;Consumer;US;Phoenix;Arizona;85023;West
+ND-18460;Neil Ducich;Corporate;US;Chandler;Arizona;85224;West
+CT-11995;Carol Triggs;Consumer;US;Tucson;Arizona;85705;West
+ON-18715;Odella Nelson;Corporate;US;Tempe;Arizona;85281;West
+TS-21340;Toby Swindell;Consumer;US;Scottsdale;Arizona;85254;West
+PB-19150;Philip Brown;Consumer;US;Avondale;Arizona;85323;West
+BF-11275;Beth Fritzler;Corporate;US;Tucson;Arizona;85705;West
+RP-19390;Resi Pölking;Consumer;US;Phoenix;Arizona;85023;West
+SD-20485;Shirley Daniels;Home Office;US;Phoenix;Arizona;85023;West
+MB-17305;Maria Bertelson;Consumer;US;Glendale;Arizona;85301;West
+SM-20005;Sally Matthias;Consumer;US;Scottsdale;Arizona;85254;West
+LP-17080;Liz Pelletier;Consumer;US;Tucson;Arizona;85705;West
+RD-19720;Roger Demir;Consumer;US;Phoenix;Arizona;85023;West
+HJ-14875;Heather Jas;Home Office;US;Mesa;Arizona;85204;West
+MT-17815;Meg Tillman;Consumer;US;Scottsdale;Arizona;85254;West
+CY-12745;Craig Yedwab;Corporate;US;Gilbert;Arizona;85234;West
+CP-12085;Cathy Prescott;Corporate;US;Tucson;Arizona;85705;West
+SC-20725;Steven Cartwright;Consumer;US;Peoria;Arizona;85345;West
+MS-17365;Maribeth Schnelling;Consumer;US;Phoenix;Arizona;85023;West
+SN-20560;Skye Norling;Home Office;US;Peoria;Arizona;85345;West
+RW-19540;Rick Wilson;Corporate;US;Mesa;Arizona;85204;West
+CK-12760;Cyma Kinney;Corporate;US;Glendale;Arizona;85301;West
+PF-19120;Peter Fuller;Consumer;US;Gilbert;Arizona;85234;West
+TH-21100;Thea Hendricks;Consumer;US;Glendale;Arizona;85301;West
+HR-14830;Harold Ryan;Corporate;US;Gilbert;Arizona;85234;West
+PS-18970;Paul Stevenson;Home Office;US;Phoenix;Arizona;85023;West
+TG-21310;Toby Gnade;Consumer;US;Mesa;Arizona;85204;West
+GH-14425;Gary Hwang;Consumer;US;Tucson;Arizona;85705;West
+CM-11935;Carlos Meador;Consumer;US;Tucson;Arizona;85705;West
+EH-13945;Eric Hoffmann;Consumer;US;Tempe;Arizona;85281;West
+GZ-14470;Gary Zandusky;Consumer;US;Bullhead City;Arizona;86442;West
+AG-10495;Andrew Gjertsen;Corporate;US;Peoria;Arizona;85345;West
+BB-10990;Barry Blumstein;Corporate;US;Sierra Vista;Arizona;85635;West
+PG-18820;Patrick Gardner;Consumer;US;Glendale;Arizona;85301;West
+DM-12955;Dario Medina;Corporate;US;Yuma;Arizona;85364;West
+TH-21235;Tiffany House;Corporate;US;Yuma;Arizona;85364;West
+MH-17785;Maya Herman;Corporate;US;Glendale;Arizona;85301;West
+LW-16825;Laurel Workman;Corporate;US;Phoenix;Arizona;85023;West
+TN-21040;Tanja Norvell;Home Office;US;Phoenix;Arizona;85023;West
+KT-16465;Kean Takahito;Consumer;US;Glendale;Arizona;85301;West
+MZ-17335;Maria Zettner;Home Office;US;Phoenix;Arizona;85023;West
+TB-21520;Tracy Blumstein;Consumer;US;Sierra Vista;Arizona;85635;West
+LP-17095;Liz Preis;Consumer;US;Phoenix;Arizona;85023;West
+AA-10375;Allen Armold;Consumer;US;Mesa;Arizona;85204;West
+NZ-18565;Nick Zandusky;Home Office;US;Yuma;Arizona;85364;West
+MS-17710;Maurice Satty;Consumer;US;Mesa;Arizona;85204;West
+ES-14080;Erin Smith;Corporate;US;Tucson;Arizona;85705;West
+LC-16930;Linda Cazamias;Corporate;US;Phoenix;Arizona;85023;West
+KD-16615;Ken Dana;Corporate;US;Scottsdale;Arizona;85254;West
+CC-12670;Craig Carreira;Consumer;US;Scottsdale;Arizona;85254;West
+TW-21025;Tamara Willingham;Home Office;US;Scottsdale;Arizona;85254;West
+JP-15460;Jennifer Patt;Corporate;US;Glendale;Arizona;85301;West
+NP-18670;Nora Paige;Consumer;US;Phoenix;Arizona;85023;West
+JA-15970;Joseph Airdo;Consumer;US;Phoenix;Arizona;85023;West
+AJ-10780;Anthony Jacobs;Corporate;US;Scottsdale;Arizona;85254;West
+SV-20935;Susan Vittorini;Consumer;US;Mesa;Arizona;85204;West
+JL-15175;James Lanier;Home Office;US;Chandler;Arizona;85224;West
+LH-16750;Larry Hughes;Consumer;US;Chandler;Arizona;85224;West
+TW-21025;Tamara Willingham;Home Office;US;Mesa;Arizona;85204;West
+EM-14140;Eugene Moren;Home Office;US;Glendale;Arizona;85301;West
+KM-16375;Katherine Murray;Home Office;US;Gilbert;Arizona;85234;West
+AJ-10945;Ashley Jarboe;Consumer;US;Chandler;Arizona;85224;West
+NC-18535;Nick Crebassa;Corporate;US;Phoenix;Arizona;85023;West
+DO-13435;Denny Ordway;Consumer;US;Mesa;Arizona;85204;West
+AG-10330;Alex Grayson;Consumer;US;Mesa;Arizona;85204;West
+DL-13495;Dionis Lloyd;Corporate;US;Chandler;Arizona;85224;West
+CM-11815;Candace McMahon;Corporate;US;Phoenix;Arizona;85023;West
+DB-13615;Doug Bickford;Consumer;US;Tucson;Arizona;85705;West
+SV-20935;Susan Vittorini;Consumer;US;Peoria;Arizona;85345;West
+AB-10105;Adrian Barton;Consumer;US;Phoenix;Arizona;85023;West
+AI-10855;Arianne Irving;Consumer;US;Glendale;Arizona;85301;West
+GH-14410;Gary Hansen;Home Office;US;Yuma;Arizona;85364;West
+JF-15490;Jeremy Farry;Consumer;US;Tempe;Arizona;85281;West
+HP-14815;Harold Pawlan;Home Office;US;Tucson;Arizona;85705;West
+SF-20200;Sarah Foster;Consumer;US;Mesa;Arizona;85204;West
+Dp-13240;Dean percer;Home Office;US;Phoenix;Arizona;85023;West
+MV-17485;Mark Van Huff;Consumer;US;Mesa;Arizona;85204;West
+AG-10900;Arthur Gainer;Consumer;US;Tucson;Arizona;85705;West
+PB-19150;Philip Brown;Consumer;US;Phoenix;Arizona;85023;West
+PC-19000;Pauline Chand;Home Office;US;Chandler;Arizona;85224;West
+AC-10450;Amy Cox;Consumer;US;Avondale;Arizona;85323;West
+MF-17665;Maureen Fritzler;Corporate;US;Phoenix;Arizona;85023;West
+KM-16720;Kunst Miller;Consumer;US;Avondale;Arizona;85323;West
+EB-13870;Emily Burns;Consumer;US;Phoenix;Arizona;85023;West
+JM-15865;John Murray;Consumer;US;Phoenix;Arizona;85023;West
+CA-12775;Cynthia Arntzen;Consumer;US;Mesa;Arizona;85204;West
+JL-15850;John Lucas;Consumer;US;Mesa;Arizona;85204;West
+EM-14095;Eudokia Martin;Corporate;US;Phoenix;Arizona;85023;West
+TS-21085;Thais Sissman;Consumer;US;Phoenix;Arizona;85023;West
+CM-12235;Chris McAfee;Consumer;US;Phoenix;Arizona;85023;West
+EP-13915;Emily Phan;Consumer;US;Tempe;Arizona;85281;West
+TS-21610;Troy Staebel;Consumer;US;Phoenix;Arizona;85023;West
+FO-14305;Frank Olsen;Consumer;US;Glendale;Arizona;85301;West
+ND-18370;Natalie DeCherney;Consumer;US;Glendale;Arizona;85301;West
+BC-11125;Becky Castell;Home Office;US;Peoria;Arizona;85345;West
+DJ-13510;Don Jones;Corporate;US;Tempe;Arizona;85281;West
+TS-21370;Todd Sumrall;Corporate;US;Phoenix;Arizona;85023;West
+ML-17410;Maris LaWare;Consumer;US;Phoenix;Arizona;85023;West
+AB-10600;Ann Blume;Corporate;US;Tucson;Arizona;85705;West
