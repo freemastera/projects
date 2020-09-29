@@ -9,8 +9,8 @@ Pentaho DI имеет:
 
 
 ## Описание проекта  
-Виктор - аналитик данных в компании.
-Одна из задач - это еженедельные отчеты по продажам для руководства. 
+<img align="left" src="/img/1.png">
+Виктор - аналитик данных в компании. Одна из задач - это еженедельные отчеты по продажам для руководства. 
 
 
 Виктор каждый понедельник сводит данные из разрозненных источников в excel. Сами данные неполные, часто содержат ошибки и разного рода опечатки.  
@@ -28,181 +28,94 @@ Pentaho DI имеет:
 Желательно, чтобы он еще обновлялся ежедневно, а не раз в неделю. 
 Т.к помимо еженедельной отчетности, планируется ежедневно мониторить основные метрики и в случае необходимости, принять меры, не дожидаясь понедельника.
  
-Исходные данные:
-Пример реализован на основе датасета Tableau Samplestore.
+### Исходные данные:
+Пример реализован на основе датасета [Tableau Samplestore](https://github.com/Data-Learn/data-engineering/blob/master/DE-101/Module-01/Lab/Sample%20-%20Superstore%20-%20Dashboard.xlsx).
 Данные можно разделить на три основных блока
 * Данные о покупателях
 * Данные о продуктах
 * Данные о продажах
-Данные о покупателях
+### Данные о покупателях
 Компания представлена по всей стране. На данный момент открыто 4 региональных представительства, каждое со своим отделом продаж и региональным менеджером: CENTRAL, WEST, EAST, SOUTH. 
 В компании нет единого формата отчетности и каждый отдел отдает данные клиентов по своему:
-Отдел CENTRAL: Одним файлом в формате Excel - CustomerData_East.xlsx
-Отдел WEST: В формате csv, причем не одним, а несколькими файлами, в разбивке по основным городам
-  
+* Отдел CENTRAL: Одним файлом в формате Excel - CustomerData_East.xlsx
+* Отдел WEST: В формате csv, причем не одним, а несколькими файлами, в разбивке по основным городам
+ <img src="/img/2.png"> 
 
-Отдел EAST: Таблица в Google Sheets
-Отдел SOUTH: CSV файл в сжатом виде - zip формат.
-
-
-
-
-
-
+* Отдел EAST: Таблица в Google Sheets
+* Отдел SOUTH: CSV файл в сжатом виде - zip формат.
 
 
 Общее у них то, что поля передаются одинаковые, но их порядок, формат, а иногда и название может отличаться
 
 
+|  | Поле | Значение  | 
+| ------------- | ------------- | ------------- | 
+| 1  | customer id  | Уникальный идентификатор клиента  | 
+| 2  | customer name | Имя и Фамилия клиента  | 
+| 3  | segment | Сегмент  | 
+| 4  | country | Страна  | 
+| 5  | city  | Город  | 
+| 6  | state  | Штат | 
+| 7  | postal code  | Почтовый индекс | 
+| 8  | region  | Региональное представительство | 
 
-
-	Поле
-	Значение
-	1
-	customer id
-	Уникальный идентификатор клиента
-	2
-	customer name
-	Имя и Фамилия клиента
-	3
-	segment
-	Сегмент
-	4
-	country
-	Страна
-	5
-	city
-	Город
-	6
-	state
-	Штат
-	7
-	postal code
-	Почтовый индекс
-	8
-	region
-	Региональное представительство
 	
 
-Данные о продуктах
+### Данные о продуктах
 Хранятся в 2 программах. Одна из которых отдает данные в формате JSON, вторая в xml
 
 
-	Поле
-	Значение
-	1
-	product_id
-	Уникальный идентификатор продукта
-	2
-	category
-	Категория
-	3
-	sub_category
-	Подкатегория
-	4
-	product_name
-	Название продукта
+|  | Поле | Значение  | 
+| ------------- | ------------- | ------------- | 
+| 1  | product_id  | Уникальный идентификатор продукта | 
+| 2  | category | Категория  | 
+| 3  | sub_category | Подкатегория  | 
+| 4  | product_name | Название продукта  | 
+
 	
-
-
-
-
-
-Данные о продажах
+### Данные о продажах
 Хранятся в транзакционной базе данных (OLTP) PostgreSQL, которая находится в облаке на Amazon RDS.
 
+|  | Поле | Значение  | 
+| ------------- | ------------- | ------------- | 
+| 1  | id  | Уникальный идентификатор строки  | 
+| 2  | order_id | Идентификатор заказа | 
+| 3  | order_date | Дата заказа | 
+| 4  | ship_date | Дата доставки | 
+| 5  | ship_mode | Класс доставки | 
+| 6  | customer_id | Идентификатор клиента | 
+| 7  | product_id  | Идентификатор продукта | 
+| 8  | sales | Выручка | 
+| 9  | quantity | Количество товаров | 
+| 10 | discount  | Скидка в процентах | 
+| 11  | profit | Прибыль | 
+
+ <img src="/img/3.png"> 
+### Данные о возвратах хранятся в базе MySQL
 
 
+|  | Поле | Значение  | 
+| ------------- | ------------- | ------------- | 
+| 1  | order_id  | Идентификатор заказа | 
+| 2  | returned | Y - был возврат  | 
 
-	Поле
-	Значение
-	1
-	id
-	Уникальный идентификатор строки
-	2
-	order_id
-	Идентификатор заказа
-	3
-	order_date
-	Дата заказа
-	4
-	ship_date
-	Дата доставки
-	5
-	ship_mode
-	Класс доставки
-	6
-	customer_id
-	Идентификатор клиента
-	7
-	product_id
-	Идентификатор продукта
-	8
-	sales
-	Выручка
-	9
-	quantity
-	Количество товаров
-	10
-	discount
-	Скидка в процентах
-	11
-	profit
-	Прибыль
-	
+<img src="/img/4.png">   
 
-  
-
-
-
-
-
-
-
-Данные о возвратах хранятся в базе MySQL
-
-
-
-
-	Поле
-	Значение
-	1
-	order_id
-	Идентификатор заказа
-	2
-	returned
-	Y - был возврат
-	
-
-
-
-  
-
-ETL - этапы
+## ETL - этапы
 Cхема (https://miro.com/app/board/o9J_kl_F6p8=/)
-  
+
+<img src="/img/5.png"> 
 
 Подробнее о каждом этапе:
-1. Extraction
+### 1. Extraction
 Извлечение данных из каждого источника
-2. Checking 
+### 2. Checking 
 Проверка, заполняемых отделом продаж данных на наличие обязательных полей: customer_id, customer name
-3. Merging
+### 3. Merging
 Объединение потоков данных
 
-
-
-
-
-
-
-
-
-
-
-
-4. Cleaning and validation
-Cleaning
+### 4. Cleaning and validation
+#### Cleaning
 Удаление дубликатов, устранение ошибок, таких как опечатки или ошибки связанные с форматом данных. 
 В нашем случае это:
 * Поле country, где у каждого отдела содержится свое значение: United States, US,USA,United States of America
@@ -212,215 +125,107 @@ Cleaning
 Примеры: Arisona, Arizon, Cacifornia, Calfornia ,Colorato, и пр. Для исправления будем использовать алгоритм нечеткого поиска и метод расстояние Левенштейна.
 * Значение поля discount необходимо перевести в проценты
 * Тип даты у полей order_date и ship_date необходимо  привести к единому формату dd-mm-yyyy
-Validation
+#### Validation
 Исправление ошибок с точки зрения бизнес логики. 
 Например, дата доставки не может быть раньше, чем дата заказа.
 
-
-5. Transformation
+### 5. Transformation
 Нормализация баз данных. Будем использовать схему звезда
 
-
-6. Loading
+### 6. Loading
 Загрузка обработанных данных в хранилище.
 
 
-
-
-Логическая модель данных
+## Логическая модель данных
   
+<img src="/img/6.png"> 
 
-Таблица dw_calendar 
+### Таблица dw_calendar 
 Данные автоматически сгенерированы с 2000 по 2030 год.
 
+|  | Поле | Значение  | 
+| ------------- | ------------- | ------------- | 
+| 1  | date_id | Уникальный идентификатор строки: yyyymmdd  | 
+| 2  | year| Год | 
+| 3  | quarter | Квартал | 
+| 4  | month | Месяц | 
+| 5  | week | Неделя | 
+| 6  | date | Дата: yyyy-mm-dd | 
+| 7  | weekday  | День недели. Короткое название:sun, mon и.т.д | 
+| 8  | leap| Високосный | 
 
-	Поле
-	Значение
-	1
-	date_id
-	Уникальный идентификатор строки: yyyymmdd
-	2
-	year
-	Год
-	3
-	quarter
-	Квартал
-	4
-	month
-	Месяц
-	5
-	week
-	Неделя
-	6
-	date
-	Дата: yyyy-mm-dd
-	7
-	weekday
-	День недели. Короткое название:sun, mon и.т.д
-	8
-	leap
-	Високосный
-	  
+<img src="/img/7.png"> 
+
+### Таблица dw_customers
 
 
+	|  | Поле | Значение  | 
+| ------------- | ------------- | ------------- | 
+| 1  | cust_id | Уникальный идентификатор (суррогатный ключ) | 
+| 2  | customer_id | Уникальный идентификатор клиента | 
+| 3  | customer_name | Имя клиента | 
+| 4  | segment | Сегмент | 
+| 5  | city | Город| 
+| 6  | state | Штат | 
+| 7  | country  | Страна | 
+| 8  | postal_code| Почтовый индекс | 
+| 9  | region| Регион |  
 
-Таблица dw_customers
+<img src="/img/8.png"> 
 
+### Таблица dw_products
+Названия и категории продукта хоть и редко, но обновляются. Поэтому были добавлены дополнительные поля, чтобы сохранить и старые данные тоже.
 
-	Поле
-	Значение
-	1
-	cust_id
-	Уникальный идентификатор (суррогатный ключ)
-	2
-	customer_id
-	Уникальный идентификатор клиента
-	3
-	customer_name
-	Имя клиента
-	4
-	segment
-	Сегмент
-	5
-	city
-	Город
-	6
-	state
-	Штат
-	7
-	country
-	Страна
-	8
-	postal_code
-	Почтовый индекс
-	9
-	region
-	Регион
-	
+	|  | Поле | Значение  | 
+| ------------- | ------------- | ------------- | 
+| 1  | prod_id | Уникальный идентификатор (суррогатный ключ) | 
+| 2  | product_id | Уникальный идентификатор продукта | 
+| 3  | category | Категория | 
+| 4  | sub_category | Подкатегория | 
+| 5  | product_name | Название продукта| 
+| 6  | start_date | Начальная дата названия | 
+| 7  | end_date | Последняя дата, когда продукт был с таким названием | 
+| 8  | version | Версия продукта | 
+| 9  | current | Y - текущая версия, N - нет |  
+| 10  | lastupdate | Дата последнего обновления |  
 
-  
+<img src="/img/9.png"> 
+
+### Таблица dw_shipping
 
 
+	|  | Поле | Значение  | 
+| ------------- | ------------- | ------------- | 
+| 1  | order_id | Уникальный идентификатор заказа | 
+| 2  | ship_mode | Класс доставки | 
+| 3  | returned | Y - был возврат товара | 
 
-Таблица dw_products
-Названия продукта хоть и редко, но обновляются. Поэтому были добавлены дополнительные поля, чтобы сохранить и старые названия тоже.
+<img src="/img/10.png"> 	
 
+### Таблица фактов dw_sales
 
-	Поле
-	Значение
-	1
-	prod_id
-	Уникальный идентификатор (суррогатный ключ)
-	2
-	product_id
-	Уникальный идентификатор продукта
-	3
-	category
-	Категория
-	4
-	sub_category
-	Подкатегория
-	5
-	product_name
-	Название продукта
-	6
-	start_date
-	Начальная дата названия
-	7
-	end_date
-	Последняя дата, когда продукт был с таким названием
-	8
-	version
-	Версия названия у продукта
-	9
-	current
-	Текущее название продукта или нет
-	10
-	lastupdate
-	Последнее обновление
-	
+	|  | Поле | Значение  | 
+| ------------- | ------------- | ------------- | 
+| 1  | row_id | Уникальный идентификатор (суррогатный ключ) | 
+| 2  | order_id | Идентификатор клиента. FK  к таблице dw_shipping | 
+| 3  | order_date | Дата заказа. FK  к таблице dw_calendar | 
+| 4  | ship_date | Дата доставки. FK  к таблице dw_calendar | 
+| 5  | cust_id | FK  к таблице dw_customers | 
+| 6  | prod_id | FK  к таблице dw_products | 
+| 7  | sales | Выручка | 
+| 8  | quantity| Количество купленных товаров | 
+| 9  | discount | Размер скидки |  
+| 10  | profit | Прибыль |  
 
-  
+<img src="/img/11.png"> 
 
-
-
-Таблица dw_shipping
-
-
-	Поле
-	Значение
-	1
-	order_id
-	Уникальный идентификатор заказа
-	2
-	ship_mode
-	Класс доставки
-	3
-	returned
-	Был ли возврат товара
-	
-
-  
-
-
-
-
-
-
-
-
-
-
-
-Таблица фактов dw_sales
-
-
-	Поле
-	Значение
-	1
-	row_id
-	Уникальный идентификатор (суррогатный ключ)
-	2
-	order_id
-	Идентификатор клиента. FK  к таблице dw_shipping
-	3
-	order_date
-	Дата заказа. FK  к таблице dw_calendar
-	4
-	ship_date
-	Дата доставки. FK  к таблице dw_calendar
-	5
-	cust_id
-	FK  к таблице dw_customers
-	6
-	prod_id
-	FK  к таблице dw_products
-	7
-	sales
-	Выручка
-	8
-	quantity
-	Количество купленных товаров
-	9
-	discount
-	Размер скидки
-	10
-	profit
-	Прибыль
-	
-
-  
-
-                   
-
-
-Создание таблиц в хранилище по схеме звезда
+## Создание таблиц в хранилище по схеме звезда
+### Код
+```sql
 --creating schema
 create schema pentaho_dw;
-
-
-
-
+```
+```sql
 --creating table customers
 --DROP table pentaho_dw.customers;
 CREATE TABLE pentaho_dw.customers (
@@ -434,8 +239,8 @@ CREATE TABLE pentaho_dw.customers (
         postal_code varchar(10),
         region varchar(50)
 );
-
-
+```
+```sql
 --creating table calendar
 --DROP table pentaho_dw.calendar;
 CREATE TABLE pentaho_dw.calendar
@@ -451,8 +256,8 @@ leap  varchar(20) NOT NULL,
 CONSTRAINT PK_calendar PRIMARY KEY ( date_id )
 CONSTRAINT date_unique UNIQUE (date)
 );
-
-
+```
+```sql
 --inserting into table calendar
 --TRUNCATE table pentaho_dw.calendar;
 insert into pentaho_dw.calendar 
@@ -472,7 +277,8 @@ to_char(date,'yyyymmdd')::int as date_id,
                        date '2030-01-01',
                        interval '1 day')
        as t(date);
-           
+```
+```sql
 --creating table products
 --DROP table pentaho_dw.products;           
 CREATE TABLE pentaho_dw.products (
@@ -487,8 +293,8 @@ CREATE TABLE pentaho_dw.products (
         "current" varchar(3) NOT NULL DEFAULT 'Y',
         lastupdate date
 );
-
-
+```
+```sql
 --creating table shipping
 --DROP table pentaho_dw.shipping;           
 CREATE TABLE pentaho_dw.shipping (
@@ -496,6 +302,8 @@ CREATE TABLE pentaho_dw.shipping (
         ship_mode varchar (25) NOT NULL DEFAULT 'N/A',
         returned varchar (1)
 );
+```
+```sql
 --creating fact table sales
 --DROP TABLE pentaho_dw.sales;
 CREATE TABLE pentaho_dw.sales (
@@ -510,13 +318,9 @@ CREATE TABLE pentaho_dw.sales (
         discount numeric NOT NULL DEFAULT '0',
         profit numeric NOT NULL DEFAULT '0'
 );
+```
 
-
-
-
-
-
-ETL в Pentaho
+## ETL в Pentaho
 У нас будет 3 transformation и 3 job:
 Transformations:
 1. Products_transformation
