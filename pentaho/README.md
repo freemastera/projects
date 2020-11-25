@@ -411,6 +411,7 @@ CREATE TABLE pentaho_dw.sales (
 
 Когда данные очищены и обработаны, то выгружаем поля order_id,ship_mode,returned в таблицу dw_shipping.
 Загружаем необходимые поля в таблицу фактов dw_sales. До выгрузки достаем суррогатные ключи cust_id и prod_id из таблиц dw_customers и  dw_products. Эти поля в таблице фактов у нас будут FK к ним
+
 <img src="/pentaho/img/28.png">   
 
 ### Три job:
