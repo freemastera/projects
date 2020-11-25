@@ -37,12 +37,12 @@ Pentaho DI имеет:
 ### Данные о покупателях
 Компания представлена по всей стране. На данный момент открыто 4 региональных представительства, каждое со своим отделом продаж и региональным менеджером: CENTRAL, WEST, EAST, SOUTH. 
 В компании нет единого формата отчетности и каждый отдел отдает данные клиентов по своему:
-* Отдел CENTRAL: [Одним файлом в формате Excel - CustomerData_East.xlsx](https://github.com/freemastera/pentaho/blob/master/customers/central/Customers_Central.xlsx)
-* Отдел WEST: [В формате csv](https://github.com/freemastera/pentaho/tree/master/customers/west), причем не одним, а несколькими файлами, в разбивке по основным городам
+* Отдел CENTRAL: [Одним файлом в формате Excel - CustomerData_Central.xlsx](https://github.com/freemastera/etl-projects/blob/master/pentaho/customers/central/Customers_Central.xlsx)
+* Отдел WEST: [В формате csv](https://github.com/freemastera/etl-projects/tree/master/pentaho/customers/west), причем не одним, а несколькими файлами, в разбивке по основным городам
  <img src="/pentaho/img/2.png"> 
 
 * Отдел EAST: [Таблица в Google Sheets](https://docs.google.com/spreadsheets/d/1L94twRun-QpgjgrnpDhYr-BVacnjHJ-EI5IGjV4fy60/edit?usp=sharing)
-* Отдел SOUTH: [CSV файл в сжатом виде - zip формат](https://github.com/freemastera/pentaho/tree/master/customers/east)
+* Отдел SOUTH: [CSV файл в сжатом виде - zip формат](https://github.com/freemastera/etl-projects/blob/master/pentaho/customers/east/Customers_East.zip)
 
 
 Общее у них то, что поля передаются одинаковые, но их порядок, формат, а иногда и название может отличаться
@@ -347,29 +347,39 @@ CREATE TABLE pentaho_dw.sales (
 * Отдел CENTRAL: Одним файлом в формате Excel - CustomerData_East.xlsx
 * Отдел WEST: В формате csv, причем не одним, а несколькими файлами, в разбивке по основным городам
 <img src="/pentaho/img/16.png"> 
+
 * Отдел EAST: Таблица в Google Sheets
 * Отдел SOUTH: CSV файл в сжатом виде - zip формат.
 
 Т.к часть данных заполняется вручную отделом продаж, то именно на этом шаге больше всего потенциальных ошибок и незаполненных обязательных полей.
 Сначала извлекаются данные по покупателям от каждого отдела. Сразу происходит проверка на наличие пропущенных обязательных полей. В нашем случае это customer_id или customer_name. В случае, если строки с этими пропущенными полями будут обнаружены, они будут отфильтрованы и выложены в отдельную папку(у каждого отдела своя) на сервере в формате excel. Этот файл потом будет отправлен на почту соответствующему отделу, с просьбой дозаполнить недостающие данные.
+
 Строки с заполненными данными идут дальше, объединяются и приводятся к единому формату. 
 Далее идет очистка данных. Сначала удаляются дубли.
 Затем, значение поля country приводится к общему виду. Как мы ранее выяснили оно может отличаться, в зависимости от отдела.
-<img src="/pentaho/img/17.png">  
+
+<img src="/pentaho/img/17.png">
+
 Потом удаляются лишние символы из поля city
-<img src="/pentaho/img/18.png">   
+
+<img src="/pentaho/img/18.png"> 
+
 На следующем шаге исправляются опечатки в названии штата. Их очень много и всех их не предугадаешь. Например, у customer_id EB-13705 Cacifornia вместо California.
+
 <img src="/pentaho/img/19.png"> 
+
 Но у нас есть файл с правильными названиями штатов и используя алгоритм  Левенштейна, мы можем решить эту задачу.
 
 <img src="/pentaho/img/20.png"> 
+
 <img src="/pentaho/img/21.png"> 
+
 Далее идет выгрузка новых значений в БД postgres с созданием суррогатного ключа cust_id. И последним шагом обновление данных.
 
 
 #### 3. Sales_transformation
 
-<img src="/pentaho/img/22.png"> 
+<img src="/pentaho/img/22.jpg"> 
   
 
 Здесь извлекаются данные о продажах, которые хранятся в облаке amazon rds 
