@@ -9,7 +9,7 @@ Pentaho DI имеет:
 
 
 ## Описание проекта  
-<img align="left" src="/img/1.png">
+<img align="left" src="/pentaho/img/1.png">
 Виктор - аналитик данных в компании. Одна из задач - это еженедельные отчеты по продажам для руководства. 
 
 
@@ -39,7 +39,7 @@ Pentaho DI имеет:
 В компании нет единого формата отчетности и каждый отдел отдает данные клиентов по своему:
 * Отдел CENTRAL: [Одним файлом в формате Excel - CustomerData_East.xlsx](https://github.com/freemastera/pentaho/blob/master/customers/central/Customers_Central.xlsx)
 * Отдел WEST: [В формате csv](https://github.com/freemastera/pentaho/tree/master/customers/west), причем не одним, а несколькими файлами, в разбивке по основным городам
- <img src="/img/2.png"> 
+ <img src="/pentaho/img/2.png"> 
 
 * Отдел EAST: [Таблица в Google Sheets](https://docs.google.com/spreadsheets/d/1L94twRun-QpgjgrnpDhYr-BVacnjHJ-EI5IGjV4fy60/edit?usp=sharing)
 * Отдел SOUTH: [CSV файл в сжатом виде - zip формат](https://github.com/freemastera/pentaho/tree/master/customers/east)
@@ -90,7 +90,7 @@ Pentaho DI имеет:
 | 10 | discount  | Скидка в процентах | 
 | 11  | profit | Прибыль | 
 
- <img src="/img/3.png"> 
+ <img src="/pentaho/img/3.png"> 
  
 ### Данные о возвратах хранятся в базе MySQL
 
@@ -100,12 +100,12 @@ Pentaho DI имеет:
 | 1  | order_id  | Идентификатор заказа | 
 | 2  | returned | Y - был возврат  | 
 
-<img src="/img/4.png">   
+<img src="/pentaho/img/4.png">   
 
 ## ETL - этапы
 Cхема (https://miro.com/app/board/o9J_kl_F6p8=/)
 
-<img src="/img/5.png"> 
+<img src="/pentaho/img/5.png"> 
 
 Подробнее о каждом этапе:
 ### 1. Extraction
@@ -139,7 +139,7 @@ Cхема (https://miro.com/app/board/o9J_kl_F6p8=/)
 
 ## Логическая модель данных
   
-<img src="/img/6.png"> 
+<img src="/pentaho/img/6.png"> 
 
 ### Таблица dw_calendar 
 Данные автоматически сгенерированы с 2000 по 2030 год.
@@ -155,7 +155,7 @@ Cхема (https://miro.com/app/board/o9J_kl_F6p8=/)
 | 7  | weekday  | День недели. Короткое название:sun, mon и.т.д | 
 | 8  | leap| Високосный | 
 
-<img src="/img/7.png"> 
+<img src="/pentaho/img/7.png"> 
 
 ### Таблица dw_customers
 
@@ -172,7 +172,7 @@ Cхема (https://miro.com/app/board/o9J_kl_F6p8=/)
 | 8  | postal_code| Почтовый индекс | 
 | 9  | region| Регион |  
 
-<img src="/img/8.png"> 
+<img src="/pentaho/img/8.png"> 
 
 ### Таблица dw_products
 Названия и категории продукта хоть и редко, но обновляются. Поэтому были добавлены дополнительные поля, чтобы сохранить и старые данные тоже.
@@ -190,7 +190,7 @@ Cхема (https://miro.com/app/board/o9J_kl_F6p8=/)
 | 9  | current | Y - текущая версия, N - нет |  
 | 10  | lastupdate | Дата последнего обновления |  
 
-<img src="/img/9.png"> 
+<img src="/pentaho/img/9.png"> 
 
 ### Таблица dw_shipping
 
@@ -201,7 +201,7 @@ Cхема (https://miro.com/app/board/o9J_kl_F6p8=/)
 | 2  | ship_mode | Класс доставки | 
 | 3  | returned | Y - был возврат товара | 
 
-<img src="/img/10.png"> 	
+<img src="/pentaho/img/10.png"> 	
 
 ### Таблица фактов dw_sales
 
@@ -218,7 +218,7 @@ Cхема (https://miro.com/app/board/o9J_kl_F6p8=/)
 | 9  | discount | Размер скидки |  
 | 10  | profit | Прибыль |  
 
-<img src="/img/11.png"> 
+<img src="/pentaho/img/11.png"> 
 
 ## Создание таблиц в хранилище по схеме звезда
 ### Код
@@ -328,11 +328,11 @@ CREATE TABLE pentaho_dw.sales (
 
 #### 1. Products_transformation
   
-<img src="/img/12.png"> 
+<img src="/pentaho/img/12.png"> 
 
 Сначала извлекаются данные о продуктах. Часть этих данных хранится в формате json, другая в xml. Затем все это сводится в один файл, сортируются по product_id и удаляются дубликаты. Затем данные выгружаются в хранилище (postgres)
   
-<img src="/img/13.png"> 
+<img src="/pentaho/img/13.png"> 
 
 Вставляются новые данные по продуктам product_id, если есть. Также обновляется дата последнего апдейта. 
 Если данные о продукте изменились, то старые данные сохраняются. Добавляется новая версия и даты изменений. В результате, при желании, можно будет увидеть старое название продукта или раздел в котором он ранее был.
@@ -340,13 +340,13 @@ CREATE TABLE pentaho_dw.sales (
 
 #### 2. Customers_transformation
   
-<img src="/img/14.jpg"> 
+<img src="/pentaho/img/14.jpg"> 
 
 На этом шаге извлекается, обрабатывается и загружается в хранилище информация о покупателях.
 Четыре региона со своими отделами продаж. Формат у всех тоже отличается. 
 * Отдел CENTRAL: Одним файлом в формате Excel - CustomerData_East.xlsx
 * Отдел WEST: В формате csv, причем не одним, а несколькими файлами, в разбивке по основным городам
-<img src="/img/16.png"> 
+<img src="/pentaho/img/16.png"> 
 * Отдел EAST: Таблица в Google Sheets
 * Отдел SOUTH: CSV файл в сжатом виде - zip формат.
 
@@ -355,53 +355,53 @@ CREATE TABLE pentaho_dw.sales (
 Строки с заполненными данными идут дальше, объединяются и приводятся к единому формату. 
 Далее идет очистка данных. Сначала удаляются дубли.
 Затем, значение поля country приводится к общему виду. Как мы ранее выяснили оно может отличаться, в зависимости от отдела.
-<img src="/img/17.png">  
+<img src="/pentaho/img/17.png">  
 Потом удаляются лишние символы из поля city
-<img src="/img/18.png">   
+<img src="/pentaho/img/18.png">   
 На следующем шаге исправляются опечатки в названии штата. Их очень много и всех их не предугадаешь. Например, у customer_id EB-13705 Cacifornia вместо California.
-<img src="/img/19.png"> 
+<img src="/pentaho/img/19.png"> 
 Но у нас есть файл с правильными названиями штатов и используя алгоритм  Левенштейна, мы можем решить эту задачу.
 
-<img src="/img/20.png"> 
-<img src="/img/21.png"> 
+<img src="/pentaho/img/20.png"> 
+<img src="/pentaho/img/21.png"> 
 Далее идет выгрузка новых значений в БД postgres с созданием суррогатного ключа cust_id. И последним шагом обновление данных.
 
 
 #### 3. Sales_transformation
 
-<img src="/img/22.png"> 
+<img src="/pentaho/img/22.png"> 
   
 
 Здесь извлекаются данные о продажах, которые хранятся в облаке amazon rds 
   
-<img src="/img/23.png"> 
+<img src="/pentaho/img/23.png"> 
 
 И данные о возвратах товара. Хранятся в БД MySQL
 
-<img src="/img/24.png">   
+<img src="/pentaho/img/24.png">   
 
 Затем эти данные объединяются через right join.
 
-<img src="/img/25.png"> 
+<img src="/pentaho/img/25.png"> 
 
 Поле discount преобразуется в проценты. Поля с датами(order_date,ship_date) приводятся к формату yyyymmdd.
 
 
 Проверка на ошибки
 У нас есть файл в формате csv с названиями товаров. Мы делаем проверку, что каждого product_id было название, иначе выводит ошибку в лог.
-<img src="/img/26.png">   
+<img src="/pentaho/img/26.png">   
 
 Затем мы делаем проверку на ошибку с точки зрения бизнес логики. А именно дата доставки, не может быть раньше, чем дата заказа. 
 Добавляем новое поле number of days
 
-<img src="/img/27.png"> 
+<img src="/pentaho/img/27.png"> 
 
 Если значение этого поля отрицательное, то выгружаем такие строки в xls и отправляем в отдел продаж с просьбой актуализировать информацию.
 
 
 Когда данные очищены и обработаны, то выгружаем поля order_id,ship_mode,returned в таблицу dw_shipping.
 Загружаем необходимые поля в таблицу фактов dw_sales. До выгрузки достаем суррогатные ключи cust_id и prod_id из таблиц dw_customers и  dw_products. Эти поля в таблице фактов у нас будут FK к ним
-<img src="/img/28.png">   
+<img src="/pentaho/img/28.png">   
 
 ### Три job:
 #### 1. main_job. Основной job, который запускает все три ранее сделанных трансформации. Запускается через крон (или планировщик задач в windows) в 4 часа утра. 
@@ -409,7 +409,7 @@ CREATE TABLE pentaho_dw.sales (
 ```
 "C:\pdi-ce-9.0.0.0-423\data-integration\kitchen.bat" /file:"C:\Users\User\Desktop\Pentaho\MainJob.kjb" /level:Basic”
 ```
- <img src="/img/29.png">    
+ <img src="/pentaho/img/29.png">    
 
 
 
@@ -420,13 +420,13 @@ CREATE TABLE pentaho_dw.sales (
 В случае если файла нет, то  ничего не происходит, если файл есть он отправляется на почту в соответствующий этому региону отдел продаж. В копии все заинтересованные лица.
 Сами файлы после этого перемещаются в другую папку на сервере, где хранится вся история. К названию файла добавляется текущая дата.
 В самом письме указывается папка на сервере, куда положить исправленные строки. У каждого отдела своя папка и доступ только к ней.
-<img src="/img/30.png">    
+<img src="/pentaho/img/30.png">    
 
 Письма в почтовом клиенте в случае обнаружения ошибок
   
-<img src="/img/31.jpg">   
+<img src="/pentaho/img/31.jpg">   
   
-<img src="/img/32.jpg">   
+<img src="/pentaho/img/32.jpg">   
 
 
 #### 3. check_corrections
