@@ -97,10 +97,13 @@ Cron в unix системах (bash скрипт) или планировщик 
 
 
 ### Подключаемся к postgres в Power bi
+
 Get data → Other → ODBC
+
 <img src="/python/metrika_to_postgres/img/11.jpg">
 
 Выбираем postgres
+
 <img src="/python/metrika_to_postgres/img/12.jpg">
 
 Выбираем нужную таблицу
