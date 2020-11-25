@@ -37,7 +37,7 @@ Pentaho DI имеет:
 ### Данные о покупателях
 Компания представлена по всей стране. На данный момент открыто 4 региональных представительства, каждое со своим отделом продаж и региональным менеджером: CENTRAL, WEST, EAST, SOUTH. 
 В компании нет единого формата отчетности и каждый отдел отдает данные клиентов по своему:
-* Отдел CENTRAL: [Одним файлом в формате Excel - CustomerData_Central.xlsx](https://github.com/freemastera/etl-projects/blob/master/pentaho/customers/central/Customers_Central.xlsx)
+* Отдел CENTRAL: [Одним файлом в формате Excel - Customers_Central.xlsx](https://github.com/freemastera/etl-projects/blob/master/pentaho/customers/central/Customers_Central.xlsx)
 * Отдел WEST: [В формате csv](https://github.com/freemastera/etl-projects/tree/master/pentaho/customers/west), причем не одним, а несколькими файлами, в разбивке по основным городам
  <img src="/pentaho/img/2.png"> 
 
