@@ -2,7 +2,7 @@
 
 ## Исходные данные
 
-Файл с продажами мебельного магазина [в формате xlsx](sources/Sample%20-%20Superstore.jpg)
+Файл с продажами мебельного магазина [в формате xls](sources/Sample%20-%20Superstore.xls)
 
 **Значения атрибутов в Sample - Superstore.xls**
 
